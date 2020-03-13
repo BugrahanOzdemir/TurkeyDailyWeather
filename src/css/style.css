@@ -3,8 +3,7 @@
 }
 
 .background {
-  background: url("https://static.pexels.com/photos/248064/pexels-photo-248064.jpeg")
-    50% no-repeat;
+  background-image: url('https://i.ibb.co/tw0nHms/day-bg.png');
   background-size: cover;
   overflow: hidden;
 }
@@ -34,9 +33,4 @@
   width: 20%;
   height: auto;
   font-size: large;
-}
-
-.weather-image{
-    width: auto;
-    height: 80px;
 }
