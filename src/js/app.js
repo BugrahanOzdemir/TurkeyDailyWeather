@@ -5,7 +5,7 @@ const background = document.getElementsByTagName('body');
 btnSearch.addEventListener('click', Main);
 
 function Main(){
-    const api = `http://api.weatherbit.io/v2.0/current?city=${searchCity.value},TR&key=e2cf801ab51e4c628356b28f8574f894`;
+    const api = `http://api.weatherbit.io/v2.0/current?city=${searchCity.value},TR&key=e2cf801ab51e4c628356b28f8574f894&lang=tr`;
     let xhr = new XMLHttpRequest();
     xhr.open('GET', api, true);
 

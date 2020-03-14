@@ -3,7 +3,7 @@
 }
 
 .background {
-  background-image: url('https://i.ibb.co/tw0nHms/day-bg.png');
+  background-image: url("https://i.ibb.co/tw0nHms/day-bg.png");
   background-size: cover;
   overflow: hidden;
 }
@@ -20,10 +20,10 @@
 }
 
 .section-text-big {
-    color: #fefefe;
-    text-shadow: 1px 1px 2px #0a0a0a;
-    font-size: 100px;
-  }
+  color: #fefefe;
+  text-shadow: 1px 1px 2px #0a0a0a;
+  font-size: 100px;
+}
 
 .btn {
   margin-left: 7px;
@@ -33,4 +33,68 @@
   width: 20%;
   height: auto;
   font-size: large;
+}
+
+.card {
+  opacity: 1;
+  z-index: 3;
+  width: 750px;
+  height: 350px;
+  background: darkgrey;
+  box-shadow: 15px 15px10px rgba(41, 41, 41, 0.64);
+  border-radius: 20px;
+}
+
+.city_name {
+  opacity: 1;
+  z-index: 3;
+  width: 249.28px;
+  height: 77px;
+  color: #ffffff;
+  font-family: "Uni Sans";
+  font-size: 64px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 77px;
+}
+
+.day {
+  z-index: 3;
+  width: 148.36px;
+  height: 43px;
+  color: #ffffff;
+  font-family: "Uni Sans";
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 43px;
+}
+
+.date {
+  z-index: 3;
+  width: 124.49px;
+  height: 29px;
+  color: #ffffff;
+  font-family: "Uni Sans";
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+}
+
+.wind_speed {
+  z-index: 3;
+  width: 202.85px;
+  height: 29px;
+  color: #ffffff;
+  font-family: "Uni Sans";
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+}
+
+.weather_icon{
+  margin-left: 300px;
+  margin-bottom: 600px;
+  width: 210px;
+  height: 180px;
+  border-radius: 25px;
 }
