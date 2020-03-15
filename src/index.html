@@ -8,39 +8,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-
     <title>Weather Plus</title>
 </head>
 
-<body>
-    <div class="container">
-        <div class="col-fluid">
-            <div class="search-box">
-                <input type="text" class="search-txt" placeholder="Şehir Adı">
-                <a class="search-btn">
-                    <i class="fa fa-search search"></i>
-                </a>
-            </div>
-            <div class="widget">
-                <div class="details">
-                    <div class="temperature"></div>
-                    <div class="summary">
-                        <p class="summaryText cityName"></p>
-                        <p class="summaryText description"></p>
-                    </div>
-                    <div class="precipitation"></div>
-                    <div class="wind"></div>
+<body class="background">
+    <div class="header">
+        <div class="container">
+            <div class="col-fluid">
+                <div class="search-box">
+                    <input class="search-txt" type="text" name="" placeholder="Şehir Adı">
+                    <a class="search-btn">
+                        <i class="fas fa-search"></i>  
+                    </a>
                 </div>
-                <div class="pictoBackdrop"></div>
-                <div class="pictoFrame">
+                <div class="widget">
+                    <div class="details">  
+                        <div class="temperature"></div>
+                        <div class="summary">
+                            <p class="summaryText cityName"></p>
+                            <p class="summaryText small dayTime">Pazar/18:37</p>
+                            <p class="summaryText description"></p>
+                        </div>
+                        <div class="precipitation"></div>
+                        <div class="wind"></div>
+                    </div>
+                    <div class="pictoBackdrop"></div>
+                    <div class="pictoFrame">
+                    </div>
+                </div>
+                <div class="dev-details text-center">
+                    <br>
+                    <p>Developed By <b>Buğrahan Özdemir</b></p>
+                    <a href="https://github.com/BugrahanOzdemir" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://bugrahanozdemir.github.io" target="_blank"><i class="fas fa-globe fa-2x"></i></a>
+                    <a href="https://www.instagram.com/bugra.py/" target="_blank"><i
+class="fab fa-instagram fa-2x"></i></a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="footer">
-        <p>Developed By <b>Buğrahan Özdemir</b></p>
-    </div>
     <script src="js/script.js"></script>
+    <script src="js/search.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>

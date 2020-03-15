@@ -2,17 +2,27 @@ const temp = document.querySelector(".temperature");
 const cityName = document.querySelector(".cityName");
 const description = document.querySelector(".description");
 const searchBox = document.querySelector(".search-txt");
-const searchButton = document.querySelector('.search');
+const searchButton = document.querySelector('.search-btn');
 const precipitation = document.querySelector(".precipitation");
 const wind = document.querySelector(".wind");
 const weatherIcon = document.querySelector(".pictoFrame");
-
-
+const dayTime = document.querySelector('.dayTime');
 
 document.addEventListener("DOMContentLoaded", function() {
   let apiLocal = `https://api.weatherbit.io/v2.0/current?city=Ankara,TR&lang=tr&key=e2cf801ab51e4c628356b28f8574f894`;
   setData(apiLocal);
 });
+
+searchBox.addEventListener('keyup', function(event){
+    if(event.keyCode === 13){
+        const apiSearch = `https://api.weatherbit.io/v2.0/current?city=${searchBox.value},TR&lang=tr&key=e2cf801ab51e4c628356b28f8574f894`;
+        if(searchBox.value != ""){
+            setData(apiSearch);
+        }else{
+            alert('Lütfen Bir Şehir Adı Girin.');
+        }
+    }
+})
 
 searchButton.addEventListener('click', function(){
     const apiSearch = `https://api.weatherbit.io/v2.0/current?city=${searchBox.value},TR&lang=tr&key=e2cf801ab51e4c628356b28f8574f894`;
@@ -134,6 +144,37 @@ function setData(api) {
                 `;
                 weatherIcon.innerHTML = wIconHtml;
             }
+
+            // Set Background
+            if(response.pod == "d"){
+                const background = document.querySelector('.background');
+                background.classList.remove('night');
+                background.classList.add('day');
+            }else{
+                const background = document.querySelector('.background');
+                background.classList.remove('day');
+                background.classList.add('night');
+            }
+
+            // Set Day-Time
+            let date = new Date();
+            let weekend = new Array(7);
+            weekend[0] = "Pazar";
+            weekend[1] = "Pazartesi";
+            weekend[2] = "Salı";
+            weekend[3] = "Çarşamba";
+            weekend[4] = "Perşembe";
+            weekend[5] = "Cuma";
+            weekend[6] = "Cumartesi";
+            let day = weekend[date.getDay()];
+            let hour = date.getHours();
+            let minute = date.getMinutes();
+
+            let dateTimeHtml = `
+                ${day} ${hour}:${minute}
+            `
+            dayTime.innerHTML = dateTimeHtml;
+
         }else{
             console.log('asd')
         }
