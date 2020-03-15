@@ -1,55 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Turkey Daily Weather</title>
+
+    <title>Weather Plus</title>
 </head>
 
-<body class="open-sans background">
+<body>
     <div class="container">
         <div class="col-fluid">
-            <div class="section-text-header mb-10">
-                <h1>Weather Plus</h1>
-                <h5>powered by <b>Bugrahan Ozdemir</b>.</h5>
+            <div class="search-box">
+                <input type="text" class="search-txt" placeholder="Şehir Adı">
+                <a class="search-btn">
+                    <i class="fa fa-search search"></i>
+                </a>
             </div>
-            <div class="search">
-                <div class="input-group justify-content-center">
-                    <input type="text" class="search-city" data-role="input" placeholder="Örn. Ankara">
-                    <div class="btn-search">
-                        <button class="btn btn-light"><span class="mif-search"></span> Hava Durumu</button>
+            <div class="widget">
+                <div class="details">
+                    <div class="temperature"></div>
+                    <div class="summary">
+                        <p class="summaryText cityName"></p>
+                        <p class="summaryText description"></p>
                     </div>
+                    <div class="precipitation"></div>
+                    <div class="wind"></div>
+                </div>
+                <div class="pictoBackdrop"></div>
+                <div class="pictoFrame">
                 </div>
             </div>
         </div>
-        <div class="col-fluid">
-            <div class="col-fluid">
-                <div class="weather-card">
-                    <div class="card">
-                        <p class="city_name">Ankara</p>
-                        <p class="day">Pazartesi</p>
-                        <p class="date">12/03/2002</p>
-                        <p class="wind_speed">16 km/H</p>
-
-                        <div class="weather_icon">
-                            <img src="https://www.weatherbit.io/static/img/icons/t01d.png" alt="" srcset="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script src="js/app.js"></script>
-        <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </div>
+    <div class="footer">
+        <p>Developed By <b>Buğrahan Özdemir</b></p>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
