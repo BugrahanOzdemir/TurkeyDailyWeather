@@ -1,5 +1,6 @@
 # Weather Plus v1.0.0
 **Enter your city and find out the weather!**
+[![Weather Plus Logo](https://i.imgur.com/6GeDs2Q.png)](https://weather-plus.000webhostapp.com/)
 ## [Click and try 'Weather Plus'](https://weather-plus.000webhostapp.com/)
  1. Open-source 
 	 • Weather Plus completely open source software.
